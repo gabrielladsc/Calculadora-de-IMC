@@ -48,7 +48,7 @@ class _HomeState extends State<Home> {
 
       if (imc < 18.5) {
         _resultado =
-            "Abaixo do peso idea., IMC: (${imc.toStringAsPrecision(3)})";
+            "Abaixo do peso ideal. IMC: (${imc.toStringAsPrecision(3)})";
       } else if (imc < 24.9) {
         _resultado = "Peso ideal. IMC: (${imc.toStringAsPrecision(3)})";
         _pesoMax = "";
