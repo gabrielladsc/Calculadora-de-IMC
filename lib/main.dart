@@ -43,24 +43,24 @@ class _HomeState extends State<Home> {
         pesoMinimo = 18.5 * alturaPessoa * alturaPessoa;
         pesoMaximo = 24.9 * alturaPessoa * alturaPessoa;
         _pesoMin = "Peso ideal mínimo: ${pesoMinimo.toStringAsPrecision(3)} kg";
-        _pesoMin = "Peso ideal máximo: ${pesoMaximo.toStringAsPrecision(3)} kg";
+        _pesoMax = "Peso ideal máximo: ${pesoMaximo.toStringAsPrecision(3)} kg";
       }
 
       if (imc < 18.5) {
         _resultado =
-            "Abaixo do peso ideal, IMC: (${imc.toStringAsPrecision(3)})";
+            "Abaixo do peso idea., IMC: (${imc.toStringAsPrecision(3)})";
       } else if (imc < 24.9) {
-        _resultado = "Peso ideal: IMC: (${imc.toStringAsPrecision(3)})";
+        _resultado = "Peso ideal. IMC: (${imc.toStringAsPrecision(3)})";
         _pesoMax = "";
         _pesoMin = "";
       } else if (imc < 29.9) {
-        _resultado = "Sobrepeso: IMC: (${imc.toStringAsPrecision(3)})";
+        _resultado = "Sobrepeso. IMC: (${imc.toStringAsPrecision(3)})";
       } else if (imc < 34.9) {
-        _resultado = "Obesidade grau I: IMC: (${imc.toStringAsPrecision(3)})";
+        _resultado = "Obesidade grau I. IMC: (${imc.toStringAsPrecision(3)})";
       } else if (imc < 39.9) {
-        _resultado = "Obesidade grau II: (${imc.toStringAsPrecision(3)})";
+        _resultado = "Obesidade grau II. (${imc.toStringAsPrecision(3)})";
       } else {
-        _resultado = "Obesidade grau III: (${imc.toStringAsPrecision(3)})";
+        _resultado = "Obesidade grau III. (${imc.toStringAsPrecision(3)})";
       }
     });
   }
@@ -131,7 +131,6 @@ class _HomeState extends State<Home> {
                       "Calcular",
                       style: TextStyle(color: Colors.blueGrey, fontSize: 25.0),
                     ),
-                    color: Colors.blueGrey,
                   ),
                 ),
               ),
